@@ -1,0 +1,94 @@
+    /* **********CREATED BY: GAGAN ARORA**************
+    ********* Website: https://gagan.click/ **********/
+
+:root{
+    /* CSS element defination */
+    --speed: -1;
+    --angle: 360deg;
+}
+body{
+    background-color: violet;
+}
+.machine{
+    background-color: azure;
+    height: 300px;
+    border: 3px dashed black;
+}
+.slot{
+    background-color: white;
+    border: 3px solid black;
+    height: 150px;
+    text-align: center;
+    font-size: 80px;
+    overflow: hidden;
+}
+#inpSpeed{
+    font-size: 30pt;
+    margin-left: 30px;
+}
+.slot > .value{
+    animation: slotspin infinite 0.5s;
+    animation-iteration-count: infinite;/* for number of animations animation */
+    animation-duration: calc(1s/var(--speed)); /* speed calculation for each speed value change*/
+}
+@keyframes slotspin{
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(150px);
+    }
+}
+
+.btn1{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+.btn1:hover {
+    background-color: green;
+}
+  
+.btn1:active {
+    background-color: green;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.btn2{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+.btn2:hover {
+    background-color: red;
+}
+  
+.btn2:active {
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#myModal{
+    background-color: green;
+}
